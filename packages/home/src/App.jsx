@@ -7,7 +7,7 @@ import Footer from "./Footer";
 
 const App = () => (
   <div className="text-3xl mx-auto max-w-6xl">
-    <Header />
+    <Header app={{name:"Home"}}/>
       <div className="my-10">
         Page d'accueil affichant les liens vers les différents modules du Sigif.<br/>
         <ul className="text-center p-2">
