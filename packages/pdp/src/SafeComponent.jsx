@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class SafeComponent extends React.component{
+export default class SafeComponent extends React.Component{
     constructor(props){
         super(props)
         this.state={hasError:false}
