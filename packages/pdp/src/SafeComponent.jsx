@@ -13,7 +13,7 @@ export default class SafeComponent extends React.Component{
     }
     render(){
         if(this.state.hasError){
-            return <h1>Something went wrong...</h1>
+            return <h1>Composant par défaut lancé au cas où le module HEADER par exemple, est en arrêt.....</h1>
         }
         return this.props.children
     }

@@ -12,7 +12,7 @@ const App = () => (
       <Header />
     </SafeComponent>
     <div className="my-10">
-        PDP page Content
+        Contenu d'une page principale d'un des modules. Par exemple, la page principale de la sous-page Demandes de permis
       </div>
     <Footer />
   </div>
