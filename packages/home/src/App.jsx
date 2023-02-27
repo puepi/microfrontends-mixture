@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import Header from "./Header";
 import Footer from "./Footer";
+import HomeContent from "./HomeContent";
 
 const App = () => (
   <div className="text-3xl mx-auto max-w-6xl">
@@ -22,6 +23,9 @@ const App = () => (
         Chaque module est une application à part entière developpée éventuellement par une seule équipe.<br/>
         Cette page d'accueil (micro app) rend disponible aux autres l'en-tête et  le pied de page de l'application
         Elle sollicite à son tour les micro interfaces déployées ailleurs par d'autres développeurs, en l'occurence le menu déroulant Sidebar
+        <div>
+          <HomeContent></HomeContent>
+        </div>
       </div>
     <Footer />
   </div>
