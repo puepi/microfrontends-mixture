@@ -23,7 +23,9 @@ const App = () => (
         Chaque module est une application à part entière developpée éventuellement par une seule équipe.<br/>
         Cette page d'accueil (micro app) rend disponible aux autres l'en-tête et  le pied de page de l'application
         Elle sollicite à son tour les micro interfaces déployées ailleurs par d'autres développeurs, en l'occurence le menu déroulant Sidebar
-        <HomeContent></HomeContent>
+        <div>
+          <HomeContent></HomeContent>
+        </div>
       </div>
     <Footer />
   </div>
