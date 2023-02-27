@@ -16,7 +16,7 @@ const App = () => (
           Contenu d'une page principale d'un des modules. Par exemple, la page principale de la sous-page Demandes de permis
           <div className="my-10">
            <Switch>
-              <Route path="/product/:id" component={PDPContent} />
+              <Route path="/products/:id" component={PDPContent} />
            </Switch>
           </div>
         </div>
