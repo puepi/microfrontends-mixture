@@ -1,4 +1,5 @@
 import {
+  Body,
   Controller,
   Get,
   Request,
@@ -39,4 +40,11 @@ export class CartController {
     // return { userId: req.user.userId };
     return this.carts[req.user.userId] ?? {cartItems:[]}
   }
-}
+
+  @Post()
+  @UseGuards(JwtAuthGuard)
+  async create(@Request() req, @Body() {id}:{id:string}): Promise<Cart>{
+
+  }
+  }
+
