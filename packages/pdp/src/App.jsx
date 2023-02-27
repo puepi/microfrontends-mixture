@@ -5,6 +5,7 @@ import "./index.scss";
 import Header from "home/Header";
 import Footer from "home/Footer"
 import SafeComponent from "./SafeComponent";
+import { PDPContent } from "./PDPContent";
 
 const App = () => (
   <div className="mt-10 text-3xl mx-auto max-w-6xl">
@@ -13,6 +14,9 @@ const App = () => (
     </SafeComponent>
     <div className="my-10">
         Contenu d'une page principale d'un des modules. Par exemple, la page principale de la sous-page Demandes de permis
+        <div>
+          <PDPContent></PDPContent>
+        </div>
       </div>
     <Footer />
   </div>
