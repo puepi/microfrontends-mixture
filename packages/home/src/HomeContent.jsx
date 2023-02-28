@@ -1,7 +1,9 @@
 import React,{useState,useEffect} from 'react'
 import { getProducts,getProductById, currency } from './products'
+import { addToCart,useLoggedIn } from 'cart/cart'
 
 export default function HomeContent(){
+    const loggedIn=useLoggedIn()
     const [products,setProducts]=useState([])
 
     useEffect(()=>{
@@ -23,6 +25,17 @@ export default function HomeContent(){
                                 <div className='flex-end'>{currency.format(product.price)}</div>
                             </div>
                             <div className='text-sm mt-4'>{product.description}</div>
+                            {
+                                loggedIn && (
+                                    <div className='text-right mt-2'>
+                                        <button className='bg-blue-500 hover:bg-blue-700'
+                                            onClick={()=>addToCart(product.id)} id={`addtocart_{product.id}`}
+                                        >
+                                            Add  to cart
+                                        </button>
+                                    </div>
+                                )
+                            }
                         </div>
                     )
                 })
