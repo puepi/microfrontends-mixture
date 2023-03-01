@@ -18,8 +18,8 @@ export default function Login(){
             </span>
             {
                 showLogin && (
-                    <div className='absolute p-5 border-4 border-blue-800'
-                         style={{width:300,top:'2rem'}}
+                    <div className='absolute p-5 border-4 border-blue-800 text-black'
+                         style={{width:300,top:'2rem',left:250}}
                     >
                         <input type="text"  placeholder='User name...' value={username}
                             onChange={evt=>setUsername(evt.target.value)}
